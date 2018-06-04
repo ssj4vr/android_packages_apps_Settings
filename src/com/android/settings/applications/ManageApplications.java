@@ -1074,7 +1074,7 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                     filterObj = new CompoundFilter(filterObj,
                             ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
                 }
-                filterObj = new CompoundFilter(filterObj,
+                    filterObj = new CompoundFilter(filterObj,
                     ApplicationsState.FILTER_SUBSTRATUM);
                 } else if (!mManageApplications.mShowSystem) {
                     if (LIST_TYPES_WITH_INSTANT.contains(mManageApplications.mListType)) {
@@ -1088,7 +1088,7 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                     filterObj = new CompoundFilter(filterObj,
                         ApplicationsState.FILTER_SUBSTRATUM);
                 }
-            }
+            
             switch (mLastSortMode) {
                 case R.id.sort_order_size:
                     switch (mWhichSize) {
